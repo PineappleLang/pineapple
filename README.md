@@ -174,7 +174,7 @@ fnc say_hello(name){
 say_hello('Alice')
 ```
 
-here's how you'd implement a decarator in Pineapple
+here's how you'd implement a decorator in Pineapple
 ```
 fnc log_decorator(func, *args, **kwargs) result{
     out('Calling {func.name}')
