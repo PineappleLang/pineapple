@@ -79,6 +79,21 @@ out(x)
 Outputs: `10`
 
 
+You can return multiple values if you want, and you can reference the variable name:
+```pineapple
+fnc divide(x, y) q, r {
+    q = x / y
+    r = x % y
+} ~ returns q, r
+
+res = divide(10, 3)
+out(res.q, res.r)  ~ prints 3, 1
+
+q, r = divide(5, 2)
+out(q, r)  ~ prints 2, 1
+```
+
+
 How to make a class:
 ```pineapple
 obj Cat {
@@ -137,6 +152,25 @@ x = x if some_thing else none
 ~ Inquiry Assignment (ignores runtime errors) |
 x = some_thing() ~ fallback to none by default
 x = some_thing() ? 0 ~ fallback to 0
+
+
+You can present errors that will halt the program
+```
+fnc validate(value:int) {
+    if value < 0 {
+        error("negative values not allowed")
+    }
+}
+```
+
+
+You can present warnings if you don't want to halt the program
+```
+fnc validate(value:int) {
+    if value < 0 {
+        warn("negative values not allowed")
+    }
+}
 ```
 
 
