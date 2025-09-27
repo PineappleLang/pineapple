@@ -1,5 +1,4 @@
-Hi, my name is Robert, I'm the creator of the Pineapple programming language, thank you for your time, and attention. If you want to skip past all of the jargon, and unecessary interpersonal bloat, skip down to the heading [TLDR](#tldr)
-
+Hi, my name is Robert, I'm the creator of the Pineapple programming language, thank you for your time, and attention.
 I made Pineapple not to particularly compete with any specific programming language, but to create something I wanted. This is the programming language I wanted to daily drive, so I made it.
 
 There are 3 official 'implementations' of the Pineapple programming language that I'm working on:
